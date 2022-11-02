@@ -13,7 +13,6 @@
     "express": "^4.18.2",
     "express-fileupload": "^1.4.0",
     "fs": "^0.0.1-security",
-    "handy-helpers": "github:Chris-Brighton/handy-helpers",
     "lodash": "^4.17.21",
     "sequelize": "^6.25.3",
     "winston": "^3.8.2"
