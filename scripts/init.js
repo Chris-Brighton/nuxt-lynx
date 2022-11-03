@@ -27,7 +27,7 @@ function makeDir(path) {
 }
 
 copyDirectory(
-  process.env.PWD + '/node_modules/nuxt-serve/scripts/template/init',
+  process.env.PWD + '/node_modules/nuxt-lynx/scripts/template/init',
   process.env.PWD
 )
 // makeDir(process.env.PWD + '/static/uploads')

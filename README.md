@@ -5,7 +5,7 @@
 ### Install
 
 ```
-npm i --save https://github.com/Chris-Brighton/nuxt-serve
+npm i --save https://github.com/Chris-Brighton/nuxt-lynx
 ```
 
 ### Scripts
@@ -14,7 +14,7 @@ Add the following scripts to you package.json for access to the file helper scri
 
 ```
 "scripts" : {
-  "init-nuxt-serve": "node ./node_modules/nuxt-serve/scripts/init.js",
+  "init-nuxt-lynx": "node ./node_modules/nuxt-lynx/scripts/init.js",
   "add-service": "node ./node_modules/nuxt-serve/scripts/service.js"
 }
 ```
@@ -39,7 +39,7 @@ plugins: [
 After adding the scripts run the init command to add a basic project template
 
 ```
-$ npm run init-nuxt-serve
+npm run init-nuxt-serve
 ```
 
 ---
@@ -47,5 +47,5 @@ $ npm run init-nuxt-serve
 ## Add Service
 
 ```
-$ npm run add-service <service-name>
+npm run add-service <service-name>
 ```
