@@ -1,4 +1,4 @@
-# Nuxt Serve
+# Nuxt Lynx
 
 ## Get Started
 
@@ -15,7 +15,7 @@ Add the following scripts to you package.json for access to the file helper scri
 ```json
 "scripts" : {
   "init-nuxt-lynx": "node ./node_modules/nuxt-lynx/scripts/init.js",
-  "add-service": "node ./node_modules/nuxt-serve/scripts/service.js"
+  "add-service": "node ./node_modules/nuxt-lynx/scripts/service.js"
 }
 ```
 
@@ -42,7 +42,7 @@ Update your nuxt.config.js
 After adding the scripts run the init command to add a basic project template
 
 ```bash
-npm run init-nuxt-serve
+npm run init-nuxt-lynx
 ```
 
 ---
