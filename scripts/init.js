@@ -30,4 +30,4 @@ copyDirectory(
   process.env.PWD + '/node_modules/nuxt-serve/scripts/template/init',
   process.env.PWD
 )
-makeDir(process.env.PWD + '/static/uploads')
+// makeDir(process.env.PWD + '/static/uploads')

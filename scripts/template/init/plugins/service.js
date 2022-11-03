@@ -5,7 +5,7 @@ function service($axios, $queryString) {
         const result = await $axios.post(`/api/${name}`, data)
         return result.data
       } catch (ex) {
-        return false
+        return ex
       }
     }
     async function get(id) {
@@ -13,7 +13,7 @@ function service($axios, $queryString) {
         const result = await $axios.get(`/api/${name}/${id}`)
         return result.data
       } catch (ex) {
-        return false
+        return ex
       }
     }
     async function find(query) {
@@ -21,7 +21,7 @@ function service($axios, $queryString) {
         const result = await $axios.get(`/api/${name}${$queryString(query)}`)
         return result.data
       } catch (ex) {
-        return false
+        return ex
       }
     }
     async function update(id, data) {
@@ -29,7 +29,7 @@ function service($axios, $queryString) {
         const result = await $axios.put(`/api/${name}/${id}`, data)
         return result.data
       } catch (ex) {
-        return false
+        return ex
       }
     }
     async function remove(id) {
@@ -37,7 +37,7 @@ function service($axios, $queryString) {
         const result = await $axios.delete(`/api/${name}/${id}`)
         return result.data
       } catch (ex) {
-        return false
+        return ex
       }
     }
     return {

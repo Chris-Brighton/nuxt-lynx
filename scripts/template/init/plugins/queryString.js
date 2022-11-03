@@ -1,13 +1,14 @@
+const filter = ['string', 'number']
 function queryString(query) {
   const string = []
   Object.keys(query).forEach((key) => {
+    const t = typeof query[key]
     string.push(
-      `${key}=${
-        typeof query[key] === 'string' ? query[key] : JSON.stringify(query[key])
-      }`
+      `${key}=${filter.includes(t) ? query[key] : JSON.stringify(query[key])}`
     )
   })
-  return '?' + string.join('&')
+  const queryString = '?' + string.join('&')
+  return queryString
 }
 
 export default ({ app }, inject) => {
