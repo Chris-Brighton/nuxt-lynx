@@ -1,4 +1,4 @@
-module.exports = function capitalize(string) {
+function capitalize(string) {
   const words = string.split(' ')
   for (let i = 0; i < words.length; i++) {
     if (words[i].length > 0) {
@@ -6,4 +6,8 @@ module.exports = function capitalize(string) {
     }
   }
   return words.join(' ')
+}
+
+export default ({ app }, inject) => {
+  inject('capitalize', capitalize)
 }
